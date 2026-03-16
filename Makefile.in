@@ -40,7 +40,7 @@ INSTALL = @INSTALL@
 CHMOD = chmod
 
 # -DAST_MODULE=\"$(PROJM)\" -D_THREAD_SAFE
-CFLAGS  = @CFLAGS@ -I$(srcdir) -std=gnu99 -DAST_MODULE_SELF_SYM=__internal_chan_dongle_self \
+CFLAGS  = @CFLAGS@ -I. -I$(srcdir) -std=gnu99 -DAST_MODULE_SELF_SYM=__internal_chan_dongle_self \
 	@CPPFLAGS@ @DEFS@ @AC_CFLAGS@
 LDFLAGS = @LDFLAGS@ 
 SOLINK  = @SOLINK@
